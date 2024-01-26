@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx5uwd3yjc02l"]
+
+[ext_resource type="Script" path="res://scripts/antivirus.gd" id="1_tpalx"]
+[ext_resource type="Texture2D" uid="uid://d1e14o3e4g567" path="res://assets/textures/antivirus.png" id="1_y6b11"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_272ye"]
+radius = 21.0
+height = 42.0
+
+[node name="Antivirus" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_tpalx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_y6b11")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_272ye")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, -47)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
