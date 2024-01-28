@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://coty7vshqjrri"]
+
+[ext_resource type="PackedScene" uid="uid://c07vomp7g6ykc" path="res://scenes/Phisher/phisherHard.tscn" id="1_kv1sy"]
+
+[node name="PhisherHard" instance=ExtResource("1_kv1sy")]
+
+[node name="Label" parent="Panel" index="0"]
+theme_override_font_sizes/font_size = 70
+text = "C0mpl3xP@ss!"

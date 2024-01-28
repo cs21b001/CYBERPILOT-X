@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://313mqb2ybcws"]
+
+[ext_resource type="PackedScene" uid="uid://c07vomp7g6ykc" path="res://scenes/Phisher/phisherHard.tscn" id="1_urm27"]
+
+[node name="PhisherHard" instance=ExtResource("1_urm27")]
+
+[node name="Label" parent="Panel" index="0"]
+theme_override_font_sizes/font_size = 68
+text = "9H#igh5Ec!ur3"

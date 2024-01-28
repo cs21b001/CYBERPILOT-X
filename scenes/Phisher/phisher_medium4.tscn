@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpb5wc7ppt1rn"]
+
+[ext_resource type="PackedScene" uid="uid://b1n7eyb15huom" path="res://scenes/Phisher/phisherMedium.tscn" id="1_ncuyr"]
+
+[node name="PhisherMedium" instance=ExtResource("1_ncuyr")]
+
+[node name="Label" parent="Panel" index="0"]
+text = "abcdef123"

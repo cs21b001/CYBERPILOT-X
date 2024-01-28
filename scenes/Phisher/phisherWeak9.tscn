@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://p3id0qxv0ncs"]
+
+[ext_resource type="PackedScene" uid="uid://dftf0qhvmewr6" path="res://scenes/Phisher/phisherWeak.tscn" id="1_p47yq"]
+
+[node name="PhiserWeak" instance=ExtResource("1_p47yq")]
+
+[node name="Label" parent="Panel" index="0"]
+text = "123abc"

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck0b1aw7qglnw"]
+
+[ext_resource type="PackedScene" uid="uid://dftf0qhvmewr6" path="res://scenes/Phisher/phisherWeak.tscn" id="1_w4ci8"]
+
+[node name="PhiserWeak" instance=ExtResource("1_w4ci8")]
+
+[node name="Label" parent="Panel" index="0"]
+offset_top = -24.0
+offset_bottom = 113.0
+theme_override_font_sizes/font_size = 100
+text = "password"

@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://crx8y8gexgxsb"]
+
+[ext_resource type="Script" path="res://scripts/antivirus_detection.gd" id="1_m1ts5"]
+[ext_resource type="FontFile" uid="uid://bhr2rhqo8dmnd" path="res://assets/fonts/Kenney Future.ttf" id="2_82x4i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ltojs"]
+bg_color = Color(0.588235, 0.0117647, 0.607843, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="SystemFont" id="SystemFont_y2o6q"]
+font_names = PackedStringArray("Impact")
+
+[node name="Antivirus_detection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m1ts5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.00392157, 0.137255, 0.164706, 1)
+
+[node name="Panel" type="Panel" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.0
+offset_top = -124.0
+offset_right = 228.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ltojs")
+
+[node name="Label" type="Label" parent="ColorRect/Panel"]
+layout_mode = 1
+offset_left = 11.0
+offset_top = 38.0
+offset_right = 441.0
+offset_bottom = 417.0
+theme_override_fonts/font = SubResource("SystemFont_y2o6q")
+theme_override_font_sizes/font_size = 38
+text = "Antivirus:
+Antivirus software is your
+ digital shield, protecting 
+your computer from
+ harmful threats in real-time."
+horizontal_alignment = 1
+script = ExtResource("1_m1ts5")
+
+[node name="continue" type="Button" parent="ColorRect/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.991
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -177.0
+offset_top = -92.184
+offset_right = 177.0
+offset_bottom = -35.117
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_82x4i")
+theme_override_font_sizes/font_size = 38
+text = "Continue"
+
+[connection signal="pressed" from="ColorRect/Panel/continue" to="." method="_on_continue_pressed"]

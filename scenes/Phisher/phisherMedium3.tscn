@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv82llf4n0o4y"]
+
+[ext_resource type="PackedScene" uid="uid://b1n7eyb15huom" path="res://scenes/Phisher/phisherMedium.tscn" id="1_3eapb"]
+
+[node name="PhisherMedium" instance=ExtResource("1_3eapb")]
+
+[node name="Label" parent="Panel" index="0"]
+theme_override_font_sizes/font_size = 95
+text = "qweRty123"

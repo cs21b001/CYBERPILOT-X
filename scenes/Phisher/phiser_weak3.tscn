@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpqafr4i7f1dv"]
+
+[ext_resource type="PackedScene" uid="uid://dftf0qhvmewr6" path="res://scenes/Phisher/phisherWeak.tscn" id="1_jax5j"]
+
+[node name="PhiserWeak" instance=ExtResource("1_jax5j")]
+
+[node name="Label" parent="Panel" index="0"]
+offset_top = -29.0
+offset_bottom = 103.0
+text = "qwerty"

@@ -1,0 +1,172 @@
+[gd_scene load_steps=55 format=3 uid="uid://bxuuwmlma1xmm"]
+
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_15kp8"]
+[ext_resource type="PackedScene" uid="uid://ceuh25br64vvt" path="res://scenes/player.tscn" id="2_oqgyc"]
+[ext_resource type="PackedScene" uid="uid://cmbeb4icp71di" path="res://scenes/diver_enemy.tscn" id="4_7pet0"]
+[ext_resource type="AudioStream" uid="uid://cyyydy05fivsp" path="res://assets/audio/laser.ogg" id="4_8y633"]
+[ext_resource type="PackedScene" uid="uid://cm23pqetbflrq" path="res://scenes/enemy.tscn" id="4_bskam"]
+[ext_resource type="PackedScene" uid="uid://ck0b1aw7qglnw" path="res://scenes/Phisher/phiser_weak1.tscn" id="4_c47qt"]
+[ext_resource type="PackedScene" uid="uid://dniho73boedhe" path="res://scenes/hud.tscn" id="4_pq1a5"]
+[ext_resource type="AudioStream" uid="uid://137oamlwx2hu" path="res://assets/audio/hit.wav" id="5_f6dy0"]
+[ext_resource type="PackedScene" uid="uid://e60ycyrecraq" path="res://scenes/Phisher/phiser_weak2.tscn" id="5_hwsfd"]
+[ext_resource type="PackedScene" uid="uid://dxnpymj1id4au" path="res://scenes/weak_password.tscn" id="5_i72sq"]
+[ext_resource type="PackedScene" uid="uid://c6uejmh8c7koe" path="res://scenes/game_over_screen.tscn" id="5_wfc6m"]
+[ext_resource type="PackedScene" uid="uid://cpqafr4i7f1dv" path="res://scenes/Phisher/phiser_weak3.tscn" id="6_d3hib"]
+[ext_resource type="PackedScene" uid="uid://dgeirbrnr357x" path="res://scenes/medium_password.tscn" id="6_kmw44"]
+[ext_resource type="AudioStream" uid="uid://b1wymalc4ru36" path="res://assets/audio/explode.wav" id="6_tmg8f"]
+[ext_resource type="PackedScene" uid="uid://gok5svyda14o" path="res://scenes/Phisher/phiser_weak4.tscn" id="7_h0l13"]
+[ext_resource type="Texture2D" uid="uid://dfgo50t0a2vci" path="res://assets/textures/star.png" id="7_p4ya3"]
+[ext_resource type="PackedScene" uid="uid://7jjv8h2lh8qr" path="res://scenes/strong_password.tscn" id="7_swstw"]
+[ext_resource type="PackedScene" uid="uid://cqhat4f54lqop" path="res://scenes/Phisher/phiser_weak6.tscn" id="8_8scbq"]
+[ext_resource type="PackedScene" uid="uid://d00iwmhe5khsu" path="res://scenes/Phisher/phisherMedium1.tscn" id="10_egjtx"]
+[ext_resource type="PackedScene" uid="uid://dv82llf4n0o4y" path="res://scenes/Phisher/phisherMedium3.tscn" id="11_ol1aq"]
+[ext_resource type="PackedScene" uid="uid://cx5uwd3yjc02l" path="res://scenes/antivirus.tscn" id="12_b7p5y"]
+[ext_resource type="PackedScene" uid="uid://b1n7eyb15huom" path="res://scenes/Phisher/phisherMedium.tscn" id="12_enwg1"]
+[ext_resource type="PackedScene" uid="uid://cxq4s8fucdjpw" path="res://scenes/virus_detection.tscn" id="13_5uo4c"]
+[ext_resource type="PackedScene" uid="uid://s4dd43qjp01" path="res://scenes/Level2.tscn" id="13_c26na"]
+[ext_resource type="PackedScene" uid="uid://bxgft4rylxb1w" path="res://scenes/Phisher/phisherWeak5.tscn" id="13_t122k"]
+[ext_resource type="PackedScene" uid="uid://crx8y8gexgxsb" path="res://scenes/antivirus_detection.tscn" id="14_fomba"]
+[ext_resource type="PackedScene" uid="uid://c1t0q66gpeie1" path="res://scenes/pause_menu.tscn" id="14_fx8d6"]
+[ext_resource type="PackedScene" uid="uid://civ8qkedaxs6h" path="res://scenes/Phisher/phisherWeak7.tscn" id="14_lkjfl"]
+[ext_resource type="PackedScene" uid="uid://bsqjuw4wmc6nu" path="res://scenes/Phisher/phisherWeak8.tscn" id="15_bjjx8"]
+[ext_resource type="PackedScene" uid="uid://p3id0qxv0ncs" path="res://scenes/Phisher/phisherWeak9.tscn" id="16_jx7ik"]
+[ext_resource type="PackedScene" uid="uid://b87ejbb20corh" path="res://scenes/Phisher/phisher_hard2.tscn" id="19_g6ea3"]
+[ext_resource type="PackedScene" uid="uid://cked84nrmqt0v" path="res://scenes/shield.tscn" id="20_5vvrp"]
+[ext_resource type="PackedScene" uid="uid://7ydeo8vmcr0w" path="res://scenes/Phisher/phisher_hard3.tscn" id="20_41f1b"]
+[ext_resource type="PackedScene" uid="uid://c07vomp7g6ykc" path="res://scenes/Phisher/phisherHard.tscn" id="20_mtqcj"]
+[ext_resource type="PackedScene" uid="uid://dftf0qhvmewr6" path="res://scenes/Phisher/phisherWeak.tscn" id="21_e1x2n"]
+[ext_resource type="PackedScene" uid="uid://ckaiewus6u4m6" path="res://scenes/Phisher/phisher_hard4.tscn" id="21_oygcu"]
+[ext_resource type="PackedScene" uid="uid://dw50rbji17fd2" path="res://scenes/Phisher/phisher_hard1.tscn" id="21_tnara"]
+[ext_resource type="PackedScene" uid="uid://coty7vshqjrri" path="res://scenes/Phisher/phisher_hard5.tscn" id="22_5m266"]
+[ext_resource type="PackedScene" uid="uid://dp2jcrttqxeys" path="res://scenes/Phisher/phisher_hard6.tscn" id="23_josdd"]
+[ext_resource type="PackedScene" uid="uid://313mqb2ybcws" path="res://scenes/Phisher/phisher_hard7.tscn" id="24_msuuw"]
+[ext_resource type="PackedScene" uid="uid://bwmb31lv2ieqq" path="res://scenes/Phisher/phisher_hard8.tscn" id="25_8l84r"]
+[ext_resource type="PackedScene" uid="uid://b6fxp8dttkxwr" path="res://scenes/Phisher/phisher_hard9.tscn" id="26_bbivq"]
+[ext_resource type="PackedScene" uid="uid://clkyl0xcfxjp1" path="res://scenes/Phisher/phisher_medium2.tscn" id="27_62buw"]
+[ext_resource type="PackedScene" uid="uid://cpb5wc7ppt1rn" path="res://scenes/Phisher/phisher_medium4.tscn" id="28_8qohe"]
+[ext_resource type="PackedScene" uid="uid://bae5tv4hspkp8" path="res://scenes/Phisher/phisher_medium5.tscn" id="29_pn7js"]
+[ext_resource type="PackedScene" uid="uid://p4m8ks14hhhn" path="res://scenes/Phisher/phisher_medium6.tscn" id="30_7logm"]
+[ext_resource type="PackedScene" uid="uid://cvomithkvoqt0" path="res://scenes/Phisher/phisher_medium7.tscn" id="31_pvmtx"]
+[ext_resource type="PackedScene" uid="uid://dtkgumc4j0ie1" path="res://scenes/Phisher/phisher_medium8.tscn" id="32_e10b2"]
+[ext_resource type="PackedScene" uid="uid://b7qm3micyisnf" path="res://scenes/Phisher/phisher_medium9.tscn" id="33_3mo4n"]
+[ext_resource type="PackedScene" uid="uid://fv705vrvgkh5" path="res://scenes/phisher_detection.tscn" id="43_qakdd"]
+[ext_resource type="PackedScene" uid="uid://ugqc28yojd0c" path="res://scenes/password_detection.tscn" id="44_jyjmt"]
+[ext_resource type="PackedScene" uid="uid://buogjandj6qd3" path="res://scenes/Start.tscn" id="48_uuuaj"]
+[ext_resource type="Texture2D" uid="uid://ytq24fsqewti" path="res://assets/textures/bg.jpg" id="50_t8b1n"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_owlid"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(270, 1, 1)
+direction = Vector3(0, -1, 0)
+spread = 0.0
+initial_velocity_min = -1000.0
+initial_velocity_max = -1000.0
+gravity = Vector3(0, 0, 0)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_15kp8")
+enemy_scenes = Array[PackedScene]([ExtResource("4_bskam"), ExtResource("4_7pet0")])
+phisher_scenes = Array[PackedScene]([ExtResource("4_c47qt"), ExtResource("5_hwsfd"), ExtResource("6_d3hib"), ExtResource("7_h0l13"), ExtResource("8_8scbq"), ExtResource("20_mtqcj"), ExtResource("10_egjtx"), ExtResource("11_ol1aq"), ExtResource("12_enwg1"), ExtResource("13_t122k"), ExtResource("14_lkjfl"), ExtResource("15_bjjx8"), ExtResource("16_jx7ik"), ExtResource("21_e1x2n"), ExtResource("21_tnara"), ExtResource("19_g6ea3"), ExtResource("20_41f1b"), ExtResource("21_oygcu"), ExtResource("22_5m266"), ExtResource("23_josdd"), ExtResource("24_msuuw"), ExtResource("25_8l84r"), ExtResource("26_bbivq"), ExtResource("27_62buw"), ExtResource("28_8qohe"), ExtResource("29_pn7js"), ExtResource("30_7logm"), ExtResource("31_pvmtx"), ExtResource("32_e10b2"), ExtResource("33_3mo4n")])
+antivirus_scenes = Array[PackedScene]([ExtResource("12_b7p5y")])
+password_scenes = Array[PackedScene]([ExtResource("5_i72sq"), ExtResource("6_kmw44"), ExtResource("7_swstw"), ExtResource("5_i72sq"), ExtResource("5_i72sq"), ExtResource("6_kmw44")])
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="LaserSound" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("4_8y633")
+
+[node name="HitSound" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("5_f6dy0")
+
+[node name="ExplodeSound" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("6_tmg8f")
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UILayer" instance=ExtResource("4_pq1a5")]
+
+[node name="GameOverScreen" parent="UILayer" instance=ExtResource("5_wfc6m")]
+visible = false
+
+[node name="phisher_detection" parent="UILayer" instance=ExtResource("43_qakdd")]
+visible = false
+
+[node name="password_detection" parent="UILayer" instance=ExtResource("44_jyjmt")]
+visible = false
+
+[node name="Level2" parent="UILayer" instance=ExtResource("13_c26na")]
+visible = false
+
+[node name="Antivirus_detection2" parent="UILayer" instance=ExtResource("14_fomba")]
+visible = false
+
+[node name="Virus_detection" parent="UILayer" instance=ExtResource("13_5uo4c")]
+visible = false
+
+[node name="Start" parent="UILayer" instance=ExtResource("48_uuuaj")]
+visible = false
+
+[node name="PauseMenu" parent="UILayer" instance=ExtResource("14_fx8d6")]
+visible = false
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(0, 960)
+
+[node name="PurpleStars" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_repeat = 2
+scale = Vector2(1.51667, 1.53646)
+texture = ExtResource("50_t8b1n")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 540, 960)
+
+[node name="StarParticleEffect" type="GPUParticles2D" parent="."]
+position = Vector2(270, -50)
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_owlid")
+texture = ExtResource("7_p4ya3")
+lifetime = 1.25
+preprocess = 5.0
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="Player" parent="." instance=ExtResource("2_oqgyc")]
+position = Vector2(444, 263)
+
+[node name="PlayerSpawnPos" type="Marker2D" parent="."]
+visible = false
+position = Vector2(270, 850)
+
+[node name="LaserContainer" type="Node2D" parent="."]
+
+[node name="EnemyContainer" type="Node2D" parent="."]
+
+[node name="AntivirusContainer" type="Node2D" parent="."]
+
+[node name="AntivirusSpawnTimer" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
+[node name="PasswordContainer" type="Node2D" parent="."]
+
+[node name="PasswordSpawnTimer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[node name="Shield" parent="." instance=ExtResource("20_5vvrp")]
+visible = false
+
+[node name="PhisherContainer" type="Node2D" parent="."]
+
+[node name="PhisherSpawnTimer" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
+
+[connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
+[connection signal="timeout" from="AntivirusSpawnTimer" to="." method="_on_antivirus_spawn_timer_timeout"]
+[connection signal="timeout" from="PasswordSpawnTimer" to="." method="_on_password_spawn_timer_timeout"]
+[connection signal="timeout" from="PhisherSpawnTimer" to="." method="_on_phisher_spawn_timer_timeout"]

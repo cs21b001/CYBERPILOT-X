@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6fxp8dttkxwr"]
+
+[ext_resource type="PackedScene" uid="uid://c07vomp7g6ykc" path="res://scenes/Phisher/phisherHard.tscn" id="1_is6cf"]
+
+[node name="PhisherHard" instance=ExtResource("1_is6cf")]
+
+[node name="Label" parent="Panel" index="0"]
+text = "$tr0ng%P@ssw0rd"

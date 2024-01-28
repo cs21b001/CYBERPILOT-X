@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://dniho73boedhe"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_36kw0"]
+[ext_resource type="FontFile" uid="uid://bhr2rhqo8dmnd" path="res://assets/fonts/Kenney Future.ttf" id="2_byd15"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_w76kk"]
+font = ExtResource("2_byd15")
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_ly5ht"]
+font = ExtResource("2_byd15")
+font_size = 22
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_36kw0")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -459.0
+offset_top = 2.0
+offset_right = -71.0
+offset_bottom = 56.0
+grow_horizontal = 0
+text = "SCORE: 9999"
+label_settings = SubResource("LabelSettings_w76kk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Shield" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 51.0
+offset_right = 133.0
+offset_bottom = 98.0
+text = "SHIELD: 0"
+label_settings = SubResource("LabelSettings_ly5ht")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Speed" type="Label" parent="."]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 51.0
+offset_right = 537.0
+offset_bottom = 98.0
+text = "SPEED: 300"
+label_settings = SubResource("LabelSettings_ly5ht")
+horizontal_alignment = 1
+vertical_alignment = 1
